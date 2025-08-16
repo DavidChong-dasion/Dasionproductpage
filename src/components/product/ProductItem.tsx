@@ -29,6 +29,9 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   
   // Check if this is the Dasion Guider product
   const isDasionGuider = product.name === 'Dasion Guider';
+  
+  // Check if this is the AutismCare product
+  const isAutismCare = product.name === 'AutismCare';
 
   if (isHugVoice) {
     return (
@@ -140,6 +143,64 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
             sx={{ mt: 1 }}
           >
             Explore Platform
+          </Button>
+        </Stack>
+      </Card>
+    );
+  }
+
+  if (isAutismCare) {
+    return (
+      <Card sx={{ borderRadius: '1.2em', cursor: 'pointer' }}>
+        <Box sx={{ pt: '100%', position: 'relative' }}>
+          <Box
+            component="img"
+            alt="AutismCare - Voice-Based AI for Autism Screening"
+            src="/assets/images/cover/cover-3.webp"
+            sx={{
+              top: 0,
+              width: 1,
+              height: 1,
+              objectFit: 'cover',
+              position: 'absolute',
+            }}
+          />
+          <Label
+            variant="outlined"
+            color="warning"
+            sx={{
+              zIndex: 9,
+              top: 16,
+              right: 16,
+              position: 'absolute',
+              textTransform: 'uppercase',
+            }}
+          >
+            INNOVATIVE
+          </Label>
+        </Box>
+
+        <Stack spacing={2} sx={{ p: 3 }}>
+          <Typography variant="h6" component="h3" gutterBottom>
+            AutismCare™
+          </Typography>
+          <Typography variant="body2" color="text.secondary" paragraph>
+            Voice-Based AI for Autism Screening
+          </Typography>
+          <Typography variant="body2" paragraph>
+            An AI-powered platform that analyzes voice, tone, and speech patterns to support autism screening and longitudinal care. Designed for clinical researchers, therapists, and families.
+          </Typography>
+          
+          <Button
+            variant="contained"
+            color="warning"
+            href="https://autismcare.dasionai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            fullWidth
+            sx={{ mt: 1 }}
+          >
+            Learn More
           </Button>
         </Stack>
       </Card>

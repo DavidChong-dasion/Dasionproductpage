@@ -50,11 +50,11 @@ const NAVIGATION: Navigation = [
   //   kind: 'divider',
   // },
 
-  // {
-  //   segment: 'sales',
-  //   title: 'Sales Analytics',
-  //   icon: <DashboardIcon />,
-  // },
+  {
+    segment: 'sales',
+    title: 'Sales Analytics',
+    icon: <DashboardIcon />,
+  },
   // {
   //   segment: 'blogs',
   //   title: 'Blogs',

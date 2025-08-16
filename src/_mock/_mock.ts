@@ -330,10 +330,11 @@ export const _taskNames = (index: number) =>
 
 
   export const _productNames = (index: number) =>
-    [
-      'Dasion Hugvoice',
-      'Dasion Guider',
-      'XTEP Air Zoom Pegasus 37 A.I.R. Chaz Bear',
+  [
+    'Dasion Hugvoice',
+    'Dasion Guider',
+    'AutismCare',
+    'XTEP Air Zoom Pegasus 37 A.I.R. Chaz Bear',
       'Nike Blazer Low 77 Vintage',
       'XTEP ZoomX SuperRep Surge',
       'Zoom Freak 2',

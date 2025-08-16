@@ -62,7 +62,7 @@ function ProductsView() {
   // Filter to only show Dasion products
   const allProducts = productService.getAllItems();
   const dasionProducts = allProducts.filter((product: any) => 
-    product.name === 'Dasion Hugvoice' || product.name === 'Dasion Guider'
+    product.name === 'Dasion Hugvoice' || product.name === 'Dasion Guider' || product.name === 'AutismCare'
   );
   
   const [products] = useState(dasionProducts);
@@ -129,14 +129,14 @@ function ProductsView() {
         </Box>
       </Box>
 
-      <CartIcon totalItems={2} />
+                    <CartIcon totalItems={3} />
 
       <Grid container spacing={3}>
-        {products.map((product:TODO) => (
-          <Grid key={product.id} size={{ xs: 12, sm: 6, md: 6 }}>
-            <ProductItem product={product} />
-          </Grid>
-        ))}
+                        {products.map((product:TODO) => (
+                  <Grid key={product.id} size={{ xs: 12, sm: 6, md: 4 }}>
+                    <ProductItem product={product} />
+                  </Grid>
+                ))}
       </Grid>
     </>
   );
