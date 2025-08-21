@@ -36,17 +36,21 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   if (isHugVoice) {
     return (
       <Card sx={{ borderRadius: '1.2em', cursor: 'pointer' }}>
-        <Box sx={{ pt: '100%', position: 'relative' }}>
+        <Box sx={{ pt: '75%', position: 'relative' }}>
           <Box
             component="img"
             alt="HugVoice - Voice AI for Kid Depression Care"
-            src="/assets/images/cover/cover-1.webp"
+            src="/assets/images/product/hugvoice.jpg"
             sx={{
               top: 0,
               width: 1,
               height: 1,
               objectFit: 'cover',
+              objectPosition: 'center',
               position: 'absolute',
+              imageRendering: 'crisp-edges',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)',
             }}
           />
           <Label
@@ -94,17 +98,21 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   if (isDasionGuider) {
     return (
       <Card sx={{ borderRadius: '1.2em', cursor: 'pointer' }}>
-        <Box sx={{ pt: '100%', position: 'relative' }}>
+        <Box sx={{ pt: '75%', position: 'relative' }}>
           <Box
             component="img"
             alt="Dasion Guider - AI-Powered Guidance Platform"
-            src="/assets/images/cover/cover-2.webp"
+            src="/assets/images/product/guider.webp"
             sx={{
               top: 0,
               width: 1,
               height: 1,
               objectFit: 'cover',
+              objectPosition: 'center',
               position: 'absolute',
+              imageRendering: 'crisp-edges',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)',
             }}
           />
           <Label
@@ -136,7 +144,7 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
           <Button
             variant="contained"
             color="secondary"
-            href="https://dasion-guider.com/"
+            href="https://dasion-guider.com/login"
             target="_blank"
             rel="noopener noreferrer"
             fullWidth
@@ -152,17 +160,21 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   if (isAutismCare) {
     return (
       <Card sx={{ borderRadius: '1.2em', cursor: 'pointer' }}>
-        <Box sx={{ pt: '100%', position: 'relative' }}>
+        <Box sx={{ pt: '75%', position: 'relative' }}>
           <Box
             component="img"
             alt="AutismCare - Voice-Based AI for Autism Screening"
-            src="/assets/images/cover/cover-3.webp"
+            src="/assets/images/product/autismai.webp"
             sx={{
               top: 0,
               width: 1,
               height: 1,
               objectFit: 'cover',
+              objectPosition: 'center',
               position: 'absolute',
+              imageRendering: 'crisp-edges',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)',
             }}
           />
           <Label
