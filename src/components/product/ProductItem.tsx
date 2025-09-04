@@ -32,6 +32,9 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
   
   // Check if this is the AutismCare product
   const isAutismCare = product.name === 'AutismCare';
+  
+  // Check if this is the ParkinsonCare product
+  const isParkinsonCare = product.name === 'ParkinsonCare';
 
   if (isHugVoice) {
     return (
@@ -40,7 +43,7 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
           <Box
             component="img"
             alt="HugVoice - Voice AI for Kid Depression Care"
-            src="/assets/images/product/hugvoice.jpg"
+            src="/assets/images/product/hugvoice.png"
             sx={{
               top: 0,
               width: 1,
@@ -102,7 +105,7 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
           <Box
             component="img"
             alt="Dasion Guider - AI-Powered Guidance Platform"
-            src="/assets/images/product/guider.webp"
+            src="/assets/images/product/guider.png"
             sx={{
               top: 0,
               width: 1,
@@ -164,7 +167,7 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
           <Box
             component="img"
             alt="AutismCare - Voice-Based AI for Autism Screening"
-            src="/assets/images/product/autismai.webp"
+            src="/assets/images/product/autismcare.png"
             sx={{
               top: 0,
               width: 1,
@@ -213,6 +216,68 @@ export function ProductItem({ product }: { product: ProductItemProps }) {
             sx={{ mt: 1 }}
           >
             Learn More
+          </Button>
+        </Stack>
+      </Card>
+    );
+  }
+
+  if (isParkinsonCare) {
+    return (
+      <Card sx={{ borderRadius: '1.2em', cursor: 'pointer' }}>
+        <Box sx={{ pt: '75%', position: 'relative' }}>
+          <Box
+            component="img"
+            alt="ParkinsonCare - AI-Powered Therapy for Parkinson's Patients"
+            src="/assets/images/product/parkinsonscare.png"
+            sx={{
+              top: 0,
+              width: 1,
+              height: 1,
+              objectFit: 'cover',
+              objectPosition: 'center',
+              position: 'absolute',
+              imageRendering: 'crisp-edges',
+              backfaceVisibility: 'hidden',
+              transform: 'translateZ(0)',
+            }}
+          />
+          <Label
+            variant="outlined"
+            color="error"
+            sx={{
+              zIndex: 9,
+              top: 16,
+              right: 16,
+              position: 'absolute',
+              textTransform: 'uppercase',
+            }}
+          >
+            THERAPY
+          </Label>
+        </Box>
+
+        <Stack spacing={2} sx={{ p: 3 }}>
+          <Typography variant="h6" component="h3" gutterBottom>
+            ParkinsonCare™
+          </Typography>
+          <Typography variant="body2" color="text.secondary" paragraph>
+            AI-Powered Therapy for Parkinson's Patients
+          </Typography>
+          <Typography variant="body2" paragraph>
+            An AI therapy assistant built to support elderly individuals living with Parkinson's disease. Combining clinical research with engaging voice interaction, ParkinsonCare helps patients regain strength, balance, and confidence through guided exercise therapy—right from their home.
+          </Typography>
+          
+          <Button
+            variant="contained"
+            color="error"
+            href="https://parkincare.dasionai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            fullWidth
+            sx={{ mt: 1 }}
+          >
+            Get Started
           </Button>
         </Stack>
       </Card>

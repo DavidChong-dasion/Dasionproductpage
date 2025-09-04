@@ -334,6 +334,7 @@ export const _taskNames = (index: number) =>
     'Dasion Hugvoice',
     'Dasion Guider',
     'AutismCare',
+    'ParkinsonCare',
     'XTEP Air Zoom Pegasus 37 A.I.R. Chaz Bear',
       'Nike Blazer Low 77 Vintage',
       'XTEP ZoomX SuperRep Surge',
